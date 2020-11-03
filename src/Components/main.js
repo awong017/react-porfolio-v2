@@ -2,8 +2,8 @@ import React from "react";
 import Nav from "./nav";
 import Footer from "./footer";
 import Skills from "./skills";
+import Projects from "./projects";
 import Styled from "styled-components";
-
 
 const Main = Styled.div`
     position: relative;
@@ -43,9 +43,7 @@ const main = () => {
                     <p>Web development is the game.</p>
                 </section>
                 <Skills />
-                <div className="projects">
-                    <h2>Recent Works</h2>
-                </div>
+                <Projects />
             </Main>
             <Footer />
         </>

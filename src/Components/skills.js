@@ -30,6 +30,9 @@ const Skills = Styled.div`
 
     .languages, .front-end, .back-end, .additional {
         position: absolute;
+        box-shadow: 
+            0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+            0 4px 8px 0 rgba(0, 0, 0, 0.19);
         height: 300px;
         width: 400px
     }
@@ -52,7 +55,6 @@ const Skills = Styled.div`
 
     .languages {
         top: 48px;
-        border: 1px solid gray;
     }
 
     .front-end {
@@ -72,7 +74,6 @@ const Skills = Styled.div`
     .additional {
         top: 324px;
         left: 1056px;
-        border: 1px solid gray;
         background-color: white;
         color: gray;
     }
