@@ -22,15 +22,7 @@ const Projects = Styled.div`
     
             &:hover .content {
                 cursor: pointer;
-                opacity: 1;
-            }
-    
-            img {
-
-                &:hover {
-                    opacity: 0.5;
-                    transition: 0.5s ease;
-                }
+                opacity: 0.8;
             }
     
             .content {
@@ -39,8 +31,9 @@ const Projects = Styled.div`
                 height: 154px;
                 width: 500px;
                 padding-top: 96px;
+                background-color: black;
                 text-align: center;
-                opacity: 0;
+                opacity: 0.3;
                 transition: 0.5s ease;
             }
         }

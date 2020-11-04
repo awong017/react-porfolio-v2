@@ -43,10 +43,36 @@ const Skills = Styled.div`
         text-align: center;
     }
 
+    .icon-container {
+        position: relative;
+        margin: auto;
+        height: 48px;
+        width: 48px;
+
+        &:hover div {
+            opacity: 1;
+        }
+
+        div {
+            position: absolute;
+            left: -16px;
+            top: 20px;
+            z-index: -1;
+            width: 133px;
+            opacity: 0;
+            transition: 0.5s;
+        }
+    }
+
     img {
         margin-bottom: 24px;
         margin-left: auto;
         margin-right: auto;
+
+        &:hover {
+            opacity: 0;
+            transition: 0.5s;
+        }
     }
 
     .skills-heading {
@@ -77,6 +103,29 @@ const Skills = Styled.div`
         background-color: white;
         color: gray;
     }
+
+    @media screen and (max-width: 1500px) {
+        width: initial;
+
+        .languages {
+            left: 24px;
+        }
+    
+        .front-end {
+            top: 324px;
+            left: 48px;
+        }
+    
+        .back-end {
+            top: 48px;
+            left: 462px;
+        }
+    
+        .additional {
+            top: 324px;
+            left: 486px;
+        }
+    }
 `
 
 const skills = () => {
@@ -85,8 +134,14 @@ const skills = () => {
             <div className="languages">
                 <h2 className="skills-heading">Languages</h2>
                 <div className="skills-icons">
-                    <img src={Javascript48} alt="icon" />
-                    <img src={Type48} alt="icon" />
+                    <div className="icon-container">
+                        <img src={Javascript48} alt="icon" />
+                        <div>Javascript</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Type48} alt="icon" />
+                        <div>TypeScript</div>
+                    </div>
                 </div>
             </div>
             <div className="front-end">
