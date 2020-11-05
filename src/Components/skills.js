@@ -71,7 +71,7 @@ const Skills = Styled.div`
 
         &:hover {
             opacity: 0;
-            transition: 0.5s;
+            transition: opacity, 0.5s ease-in-out;
         }
     }
 
