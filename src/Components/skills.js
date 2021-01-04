@@ -26,6 +26,8 @@ const Skills = Styled.div`
     height: 648px;
     width: 1456px;
     margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
     color: gray;
 
     .languages, .front-end, .back-end, .additional {
@@ -80,25 +82,25 @@ const Skills = Styled.div`
     }
 
     .languages {
-        top: 48px;
+        top: 148px;
     }
 
     .front-end {
-        top: 324px;
+        top: 424px;
         left: 352px;
         background-color: gray;
         color: white;
     }
 
     .back-end {
-        top: 48px;
+        top: 148px;
         left: 704px;
         background-color: #ffcc99;
         color: white;
     }
 
     .additional {
-        top: 324px;
+        top: 424px;
         left: 1056px;
         background-color: white;
         color: gray;
@@ -112,17 +114,14 @@ const Skills = Styled.div`
         }
     
         .front-end {
-            top: 324px;
             left: 48px;
         }
     
         .back-end {
-            top: 48px;
             left: 462px;
         }
     
         .additional {
-            top: 324px;
             left: 486px;
         }
     }

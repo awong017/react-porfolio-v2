@@ -4,12 +4,15 @@ import SmashUlt from "../Images/smash-ult-cover-light.png";
 import Xpense from "../Images/xpense-cover-light.png";
 
 const Projects = Styled.div`
-    margin-top: 24px;
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: 64px;
+    padding-bottom: 120px;
     background-color: gray;
     text-align: center;
     color: white;
+
+    h1 {
+        margin-bottom: 48px;
+    }
 
     .projects-display {
         display: flex;
