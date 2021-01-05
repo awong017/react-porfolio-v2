@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Styled from "styled-components";
-import SmashUlt from "../Images/smash-ult-cover-light.png";
-import Xpense from "../Images/xpense-cover-light.png";
+import SmashUltCover from "../Images/smash-ult-cover-light.png";
+import XpenseCover from "../Images/xpense-cover-light.png";
 
 const Projects = Styled.div`
     padding-top: 64px;
@@ -17,6 +18,11 @@ const Projects = Styled.div`
     .projects-display {
         display: flex;
         justify-content: space-around;
+
+        a {
+            link-style: none;
+            color: white;
+        }
 
         .cover-container {
             position: relative;
@@ -47,15 +53,17 @@ const projects = () => {
     return (
         <Projects>
             <h1>Latest Works</h1>
-            <section className="projects-display">   
-                <div className="cover-container">
-                    <img src={SmashUlt} ult="cover" />
-                    <div className="content">
-                        <h2>Smash Ultimate Stats Tracker</h2>
+            <section className="projects-display">
+                <Link to={"/smashult"}>
+                    <div className="cover-container">
+                        <img src={SmashUltCover} ult="cover" />
+                        <div className="content">
+                            <h2>Smash Ultimate Stats Tracker</h2>
+                        </div>
                     </div>
-                </div>
+                </Link>   
                 <div className="cover-container">
-                    <img src={Xpense} ult="cover" />
+                    <img src={XpenseCover} ult="cover" />
                     <div className="content">
                         <h2>Xpense</h2>
                     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, withRouter } from "react-router-dom";
 import Main from "./Components/main";
+import SmashUlt from "./Components/smashUlt";
 import Styled from "styled-components";
 
 const App = Styled.div`
@@ -14,6 +15,7 @@ const app = () => {
     return (
       <>
         <Route exact path="/" component={Main} />
+        <Route path="/smashult" component={SmashUlt} />
       </>
     );
   };
