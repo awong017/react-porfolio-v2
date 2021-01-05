@@ -28,7 +28,6 @@ const Skills = Styled.div`
     margin: auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    color: gray;
 
     .languages, .front-end, .back-end, .additional {
         position: absolute;
@@ -47,7 +46,10 @@ const Skills = Styled.div`
 
     .icon-container {
         position: relative;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+        z-index: 1;
         height: 48px;
         width: 48px;
 
@@ -55,12 +57,15 @@ const Skills = Styled.div`
             opacity: 1;
         }
 
+        &:hover img {
+            opacity: 0;
+        }
+
         div {
             position: absolute;
-            left: -16px;
-            top: 20px;
+            left: 0px;
+            top: 16px;
             z-index: -1;
-            width: 133px;
             opacity: 0;
             transition: 0.5s;
         }
@@ -70,11 +75,7 @@ const Skills = Styled.div`
         margin-bottom: 24px;
         margin-left: auto;
         margin-right: auto;
-
-        &:hover {
-            opacity: 0;
-            transition: opacity, 0.5s ease-in-out;
-        }
+        transition: opacity, 0.5s ease-in-out;
     }
 
     .skills-heading {
@@ -83,6 +84,7 @@ const Skills = Styled.div`
 
     .languages {
         top: 148px;
+        color: gray;
     }
 
     .front-end {
@@ -135,7 +137,7 @@ const skills = () => {
                 <div className="skills-icons">
                     <div className="icon-container">
                         <img src={Javascript48} alt="icon" />
-                        <div>Javascript</div>
+                        <div>JavaScript</div>
                     </div>
                     <div className="icon-container">
                         <img src={Type48} alt="icon" />
@@ -146,34 +148,88 @@ const skills = () => {
             <div className="front-end">
                 <h2 className="skills-heading">Front End</h2>
                 <div className="skills-icons">
-                    <img src={React48} alt="icon" />
-                    <img src={Redux48} alt="icon" />
-                    <img src={Gatsby48} alt="icon" />
-                    <img src={Jquery48} alt="icon" />
-                    <img src={Html48} alt="icon" />
-                    <img src={Css48} alt="icon" />
-                    <img src={Sass48} alt="icon" />
+                    <div className="icon-container">
+                        <img src={React48} alt="icon" />
+                        <div>React</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Redux48} alt="icon" />
+                        <div>Redux</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Gatsby48} alt="icon" />
+                        <div>Gatsby</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Jquery48} alt="icon" />
+                        <div>jQuery</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Html48} alt="icon" />
+                        <div>HTML5</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Css48} alt="icon" />
+                        <div>CSS3</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Sass48} alt="icon" />
+                        <div>Sass</div>
+                    </div>
                 </div>
             </div>
             <div className="back-end">
                 <h2 className="skills-heading">Back End</h2>
                 <div className="skills-icons">
-                    <img src={Express48} alt="icon" />
-                    <img src={Postgres48} alt="icon" />
-                    <img src={Graphql48} alt="icon" />
-                    <img src={Api48} alt="icon" />
-                    <img src={Mocha48} alt="icon" />
+                    <div className="icon-container">
+                        <img src={Express48} alt="icon" />
+                        <div>Express</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Postgres48} alt="icon" />
+                        <div>PostgreSQL</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Graphql48} alt="icon" />
+                        <div>GraphQL</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Api48} alt="icon" />
+                        <div>API</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Mocha48} alt="icon" />
+                        <div>Mocha</div>
+                    </div>
                 </div>
             </div>
             <div className="additional">
                 <h2 className="skills-heading">Additional Tools</h2>
                 <div className="skills-icons">
-                    <img src={Npm48} alt="icon" />
-                    <img src={Node48} alt="icon" />
-                    <img src={Strapi48} alt="icon" />
-                    <img src={Github48} alt="icon" />
-                    <img src={Heroku48} alt="icon" />
-                    <img src={Zeit48} alt="icon" />
+                    <div className="icon-container">
+                        <img src={Npm48} alt="icon" />
+                        <div>NPM</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Node48} alt="icon" />
+                        <div>Node</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Strapi48} alt="icon" />
+                        <div>Strapi</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Github48} alt="icon" />
+                        <div>Github</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Heroku48} alt="icon" />
+                        <div>Heroku</div>
+                    </div>
+                    <div className="icon-container">
+                        <img src={Zeit48} alt="icon" />
+                        <div>Vercel</div>
+                    </div>
                 </div>
             </div>
         </Skills>
