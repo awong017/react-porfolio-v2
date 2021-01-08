@@ -61,13 +61,15 @@ const projects = () => {
                             <h2>Smash Ultimate Stats Tracker</h2>
                         </div>
                     </div>
-                </Link>   
-                <div className="cover-container">
-                    <img src={XpenseCover} ult="cover" />
-                    <div className="content">
-                        <h2>Xpense</h2>
+                </Link>
+                <Link to={"/xpense"}>
+                    <div className="cover-container">
+                        <img src={XpenseCover} ult="cover" />
+                        <div className="content">
+                            <h2>Xpense</h2>
+                        </div>
                     </div>
-                </div>
+                </Link>
             </section>
         </Projects>
     );
