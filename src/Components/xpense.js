@@ -9,7 +9,7 @@ const Xpense = Styled.div`
 const xpense = () => {
     return (
         <Xpense>
-            <h1>Xpense Component</h1>
+            <h1>Xpense Component Here</h1>
         </Xpense>
     );
 };
