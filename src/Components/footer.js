@@ -14,6 +14,11 @@ const Footer = Styled.div`
         width: 400px;
         padding-left: 0;
         list-style: none;
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
     }
 `;
 
@@ -21,9 +26,9 @@ const footer = () => {
     return (
         <Footer>
             <ul className="contact">
-                <li>LinkedIn</li>
-                <li>GitHub</li>
-                <li>Email</li>
+                <li><a href="https://www.linkedin.com/in/adambwong/">LinkedIn</a></li>
+                <li><a href="https://github.com/awong017">GitHub</a></li>
+                <li><a href="mailto:adamwthedev@gmail.com">Email</a></li>
             </ul>
             <p>2020, Adam Wong. Built with React</p>
         </Footer>
